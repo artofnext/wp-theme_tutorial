@@ -4,6 +4,6 @@
         <?php wp_head(); ?>
     </head>
     <body>
-        <h1>Body</h1>
-    </body>
-</html>
+        <header>
+            <h1>Header</h1>
+        </header>
