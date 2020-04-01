@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/8125038d06.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" 
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <?php wp_head(); ?>
 
     </head>
@@ -9,8 +11,11 @@
     <header class="site-header">
     <div class="container">
       <h1 class="school-logo-text float-left"><a href="#"><strong>Fictional</strong> University</a></h1>
-      <span class="js-search-trigger site-header__search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span>
-      <i class="site-header__menu-trigger fa fa-bars" aria-hidden="true"></i>
+      <span class="js-search-trigger site-header__search-trigger"><i class="fab fa-search" aria-hidden="true"></i></span>
+      <i class="site-header__menu-trigger fab fa-bars" aria-hidden="true"></i>
+      
+      
+
       <div class="site-header__menu group">
         <nav class="main-navigation">
           <ul>
@@ -24,7 +29,7 @@
         <div class="site-header__util">
           <a href="#" class="btn btn--small btn--orange float-left push-right">Login</a>
           <a href="#" class="btn btn--small  btn--dark-orange float-left">Sign Up</a>
-          <span class="search-trigger js-search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span>
+          <span class="search-trigger js-search-trigger"><i class="fa fa-search"></i></span>
         </div>
       </div>
     </div>
