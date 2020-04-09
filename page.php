@@ -32,9 +32,14 @@ while (have_posts()) {
 
 <?php
     }
-    
   ?>
 
+<?php
+    $hasChildrenPage = get_pages(array(
+      'child_of' => get_the_ID()
+    ));
+
+    if ($theParent or $hasChildrenPage) { ?>
     <div class="page-links">
       <h2 class="page-links__title"><a href="<?php echo get_permalink($theParent); ?>"><?php echo get_the_title($theParent); ?></a></h2>
       <ul class="min-list">
@@ -47,7 +52,8 @@ while (have_posts()) {
 
           wp_list_pages(array(
             'title_li' => NULL,
-            'child_of' => $findChildrenOf
+            'child_of' => $findChildrenOf,
+            'sort_column' => 'menu_order'
           ));
         ?>
       </ul>
@@ -56,6 +62,9 @@ while (have_posts()) {
     <div class="generic-content">
      <?php the_content(); ?>
     </div>
+    <?php
+    }
+  ?>
 
   </div>
     
