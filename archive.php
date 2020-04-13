@@ -8,17 +8,10 @@ get_header();
   <div class="page-banner__content container container--narrow">
     <h1 class="page-banner__title">
     <?php the_archive_title() ?>
-    <!-- <?php 
-    if (is_category()) {
-        single_cat_title();
-    }
-    if (is_author()) {
-        echo "Posts by "; the_author();
-    } 
-    ?> -->
+    
     </h1>
     <div class="page-banner__intro">
-      <p>Latest news</p>
+      <p><?php the_archive_description(); ?></p>
     </div>
   </div>
 </div>
