@@ -9,10 +9,10 @@ get_header();
     <h1 class="page-banner__title">
     <?php 
     if (is_category()) {
-        echo "category name";
+        single_cat_title();
     }
     if (is_author()) {
-        echo "author name";
+        echo "Posts by "; the_author();
     } 
     ?>
     </h1>
